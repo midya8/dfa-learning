@@ -1,14 +1,14 @@
-# DFALab
+# Dfa learning
 
-DFALab learns a minimal deterministic finite automaton from a supplied finite teacher. It implements Dana Angluin's L* algorithm: ask membership questions, repair an observation table, propose a machine and use an exact counterexample to try again.
+Dfa learning learns a minimal deterministic finite automaton from a supplied finite teacher. It implements Dana Angluin's L* algorithm: ask membership questions, repair an observation table, propose a machine and use an exact counterexample to try again.
 
 The browser shows each query, repair and equivalence check. The finite teacher returns a shortest counterexample until both machines accept the same language. Reachability and pair-separation witnesses then prove that the learned machine is minimal.
 
 Three inspectors answer different questions:
 
-- [Learning](https://midya8.github.io/dfalab/): how does each counterexample change the conjectured machine? See [CONTRACT.md](CONTRACT.md) for the algorithm and exact teacher interface.
-- [Bounded conformance](https://midya8.github.io/dfalab/conformance.html): when does passing a finite W-method suite establish equivalence, given a reachable-state bound? See [CONFORMANCE.md](CONFORMANCE.md).
-- [Finite fault atlas](https://midya8.github.io/dfalab/fault-atlas.html): which subsets of that suite detect every faulty implementation in a tiny, explicitly enumerated domain? See [FAULT_ATLAS.md](FAULT_ATLAS.md).
+- [Learning](https://midya8.github.io/dfa-learning/): how does each counterexample change the conjectured machine? See [CONTRACT.md](CONTRACT.md) for the algorithm and exact teacher interface.
+- [Bounded conformance](https://midya8.github.io/dfa-learning/conformance.html): when does passing a finite W-method suite establish equivalence, given a reachable-state bound? See [CONFORMANCE.md](CONFORMANCE.md).
+- [Finite fault atlas](https://midya8.github.io/dfa-learning/fault-atlas.html): which subsets of that suite detect every faulty implementation in a tiny, explicitly enumerated domain? See [FAULT_ATLAS.md](FAULT_ATLAS.md).
 
 ## What the learning inspector shows
 
@@ -60,7 +60,7 @@ Six added native tests include 52,488 exhaustive reference/candidate cases. Two 
 
 ## Finite fault atlas
 
-[Finite fault atlas](https://midya8.github.io/dfalab/fault-atlas.html) | [Exact domain and optimization contract](FAULT_ATLAS.md)
+[Finite fault atlas](https://midya8.github.io/dfa-learning/fault-atlas.html) | [Exact domain and optimization contract](FAULT_ATLAS.md)
 
 Enumerate every labeled implementation in a tiny unary/binary fault domain, exclude exactly equivalent candidates from the fault denominator, then inspect every subset of the constructed W-suite. The atlas proves the best subset under test-count then letter-count cost by checking every alternative, retaining all minima and concrete deletion witnesses. It never confuses irredundancy with minimum cardinality or claims globally shortest tests. Every candidate graph, acceptance matrix row, escaping fault and correct survivor is inspectable.
 
