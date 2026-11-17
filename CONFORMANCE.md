@@ -1,6 +1,6 @@
 # Bounded conformance: all tests pass, does the claim hold?
 
-[Live inspector](https://midya8.github.io/dfalab/conformance.html). This is an explanatory implementation of the classic W-method of Vasilevskii and Chow, not a new algorithm. It is separate from the unchanged `dfalab-learning-v1` learning certificate and its exact finite teacher.
+[Live inspector](https://midya8.github.io/dfa-learning/conformance.html). This is an explanatory implementation of the classic W-method of Vasilevskii and Chow, not a new algorithm. It is separate from the unchanged `dfalab-learning-v1` learning certificate and its exact finite teacher.
 
 ## Exact domain and theorem
 
@@ -57,6 +57,6 @@ Generation reads at most 64 KiB; verification at most 8 MiB. Duplicate JSON keys
 - [Huang and Peleska, test automation paper](https://www.informatik.uni-bremen.de/agbs/jp/papers/test-automation-huang-peleska.pdf): background on finite-state testing, not the governing DFA theorem.
 - [Aditya P. Mathur, *Foundations of Software Testing*, sample FSM chapter](https://www.cs.purdue.edu/homes/apm/foundationsBook/samples/fsm-chapter.pdf): textbook finite-state test-generation context, not a claim about this implementation's efficiency.
 - [Oxford DFA learning notes](https://www.cs.ox.ac.uk/people/james.worrell/DFA-learning.pdf): DFA learning context. The original learning and exact-equivalence interface remains separate.
-- [LearnLib equivalence-oracle documentation](https://learnlib.de/learnlib/maven-site/latest/apidocs/de.learnlib.oracle.equivalence/de/learnlib/oracle/equivalence/package-summary.html): existing W-method and random-W-method oracle families. DFALab is not LearnLib and does not implement all its variants.
+- [LearnLib equivalence-oracle documentation](https://learnlib.de/learnlib/maven-site/latest/apidocs/de.learnlib.oracle.equivalence/de/learnlib/oracle/equivalence/package-summary.html): existing W-method and random-W-method oracle families. DFA learning is not LearnLib and does not implement all its variants.
 
 No minimum-suite, optimal query count, production-protocol coverage, unknown-service bound inference, noisy/timed/probabilistic/nondeterministic testing, or security-isolation claim.
