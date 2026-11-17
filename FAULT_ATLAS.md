@@ -1,6 +1,6 @@
 # Finite fault atlas: every tiny implementation and every W-suite subset
 
-[Live atlas](https://midya8.github.io/dfalab/fault-atlas.html). This extends [bounded conformance](CONFORMANCE.md), not the original L* learning schema. Classic W-method and set-cover ideas are credited below. This is an original implementation and inspector, not a new test-generation algorithm.
+[Live atlas](https://midya8.github.io/dfa-learning/fault-atlas.html). This extends [bounded conformance](CONFORMANCE.md), not the original L* learning schema. Classic W-method and set-cover ideas are credited below. This is an original implementation and inspector, not a new test-generation algorithm.
 
 ## Precise question
 
@@ -71,6 +71,6 @@ The strict atomic CLI transport is reused: 64 KiB generation request, 8 MiB veri
 3. [*An Empirical Study of Greedy Test Suite Minimization Techniques Using Mutation Coverage*](https://tugraz.elsevierpure.com/ws/portalfiles/portal/70135366/An_Empirical_Study_of_Greedy_Test_Suite_Minimization_Techniques_Using_Mutation_Coverage.pdf): test reduction as set cover, mutation matrices and equivalent-mutant caveats. We use exhaustive subsets, not its greedy algorithms or empirical result claims; our candidates are all graphs, not program mutants.
 4. [Mathur, *Foundations of Software Testing*, FSM sample chapter](https://www.cs.purdue.edu/homes/apm/foundationsBook/samples/fsm-chapter.pdf): FSM fault-model and W/Wp background. No textbook test-cost formula is substituted for our explicitly reset-per-word objective.
 5. [Gargantini, *Conformance Testing*, Sections 4.2 and 4.4.1](https://cs.unibg.it/gargantini/research/papers/motres05.pdf): reliable reset, fixed complete machines and characterization sets. Its Mealy output-trace conventions differ from our DFA whole-word acceptance.
-6. [LearnLib equivalence-oracle API](https://learnlib.de/learnlib/maven-site/latest/apidocs/de.learnlib.oracle.equivalence/de/learnlib/oracle/equivalence/package-summary.html): existing W-method/random-W-method variants and attribution. DFALab is not LearnLib.
+6. [LearnLib equivalence-oracle API](https://learnlib.de/learnlib/maven-site/latest/apidocs/de.learnlib.oracle.equivalence/de/learnlib/oracle/equivalence/package-summary.html): existing W-method/random-W-method variants and attribution. DFA learning is not LearnLib.
 
 All scope and optimality claims here are about supplied finite complete deterministic automata with reliable reset and a fixed implementation. They do not establish a hidden service's model or bound.
